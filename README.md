@@ -20,15 +20,20 @@ font family and size
 text color &or background color of tasks to show whether or not they have been completed
 
 CHECKLIST: Refer to Koala Holla group project
-[ ] spin up server
-[ ] bring Angular file into project
-    [ ] source AngularJS into index.html
-[ ] bring jQuery file into project
-    [ ] source in jQuery
-[ ] Styles folder
-    [ ] source in style sheet
+[x] Write README
+[x] Setup project folders and files
+[x] spin up server
+[x] .gitignore
+[x] install express
+[x] bring Angular file into project
+    [x] source AngularJS into index.html
+[x] bring jQuery file into project
+    [x] source in jQuery
+[x] Styles folder
+    [x] source in style sheet
 [ ] Mongo
-    [ ] Create new database: To-Do List
+    [x] Install Mongoose
+    [ ] Create new database via server.js
     [ ] Connect to Mongo via server.js
 [ ] HTML (using AngularJS)
     [ ] Form: input fields to capture to-dos

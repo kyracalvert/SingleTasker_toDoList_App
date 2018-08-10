@@ -1,0 +1,26 @@
+{
+  "name": "weekend-challenge-3-to-do",
+  "version": "1.0.0",
+  "description": "To-Do-List Application",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.16.3",
+    "mongoose": "^5.2.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kyracalvert/weekend-challenge-3-to-do.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kyracalvert/weekend-challenge-3-to-do/issues"
+  },
+  "homepage": "https://github.com/kyracalvert/weekend-challenge-3-to-do#readme"
+}
