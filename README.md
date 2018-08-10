@@ -18,3 +18,32 @@ Use CSS styling to move the aesthetic of the page beyond the vanilla HTML look:
 Background color of the page
 font family and size
 text color &or background color of tasks to show whether or not they have been completed
+
+CHECKLIST: Refer to Koala Holla group project
+[ ] spin up server
+[ ] bring Angular file into project
+    [ ] source AngularJS into index.html
+[ ] bring jQuery file into project
+    [ ] source in jQuery
+[ ] Styles folder
+    [ ] source in style sheet
+[ ] Mongo
+    [ ] Create new database: To-Do List
+    [ ] Connect to Mongo via server.js
+[ ] HTML (using AngularJS)
+    [ ] Form: input fields to capture to-dos
+    [ ] Setup NG app and controller
+    [ ] Table to capture inputs: task, submit, complete, delete
+        [ ] When task complete, its visual representation should change (ng-class)
+    [ ] Buttons: submit, complete, delete
+[ ] Client
+    [ ] Logic for GET (add to table)
+    [ ] Logic for POST (get info from form)
+[ ] Server
+    [ ] Logic for GET
+    [ ] Logic for POST 
+    [ ] Logic for submit
+    [ ] Logic for complete
+    [ ] Logic for delete
+
+
