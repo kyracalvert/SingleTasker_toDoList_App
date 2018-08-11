@@ -10,7 +10,8 @@ const TaskSchema = new Schema ({
     date: {type: String},
     due_date: {type: String},
     notes: {type: String},
-    complete: {type: Boolean}
+    complete: {type: Boolean},
+    delete: {type: Boolean}
 
 });
 

@@ -26,7 +26,7 @@
             <input type="text" ng-model="tc.taskToAdd.date" placeholder="Today's Date">
             <input type="text" ng-model="tc.taskToAdd.due_date" placeholder="Due Date">
             <input type="text" ng-model="tc.taskToAdd.notes" placeholder="Notes">
-            <input type="text" ng-model="tc.taskToAdd.complete" placeholder="Complete?">
+            <input type="text" ng-model="tc.taskToAdd.complete" placeholder="Completed?">
             <input type="submit" value="submit">
         </form>
         <br>
@@ -39,9 +39,27 @@
                     <th>Submission Date</th>
                     <th>Due Date</th>
                     <th>Notes</th>
-                    <th>Complete?</th>
+                    <th>Click when task is complete:</th>
+                    <th>Completed?</th>
+                    <th>Delete</th>
                 </tr>
             </thead>
+
+            <tbody id="task-outputs">
+                <tr ng-repeat="task in tc.tasks" ng-class="{{task.complete}} ? 'yes' : 'no'">
+                    <td>{{task.task}}</td>
+                    <td>{{task.date}}</td>
+                    <td>{{task.due_date}}</td>
+                    <td>{{task.notes}}</td>
+                    <td>
+                        <button ng-click="tc.complete(tasks._id)">Complete</button>
+                    </td>
+                    <td>{{task.complete}}</td>
+                    <td>
+                        <button ng-click="tc.delete(tasks._id)">Delete Task</button>
+                    </td>   
+                </tr>
+            </tbody>
         </table>
     </div>
 

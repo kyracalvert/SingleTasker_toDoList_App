@@ -40,10 +40,10 @@ CHECKLIST: Refer to Koala Holla group project
 [ ] HTML (using AngularJS)
     [x] Form: input fields to capture to-dos
     [x] Setup NG app and controller
-    [ ] Table to capture inputs: task, submit, complete, delete
+    [x] Table to capture inputs: task, submit, complete, delete
         [ ] When task complete, its visual representation should change (ng-class)
     [ ] Format table
-    [ ] Buttons: submit, complete, delete
+    [x] Buttons: submit, complete, delete
 [ ] Client
     [ ] Logic for GET (add to table)
     [ ] Logic for POST (get info from form)
