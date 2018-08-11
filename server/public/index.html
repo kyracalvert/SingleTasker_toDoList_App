@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>To-Do List</title>
@@ -8,9 +9,43 @@
     <script src="vendors/jquery-3.2.1.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
+
 </head>
-<body>
-    
+
+<body ng-app="myApp">
+    <div class="container" ng-controller="TaskController as tc">
+        <header>
+            <h1>TaskApp</h1>
+            <h3>You have a lot to do! TaskApp helps you keep track.</h3>
+        </header>
+        <br>
+        <br>
+        <h2>Add Tasks</h2>
+        <form id="task-form" ng-submit="tc.addTask(taskToAdd)">
+            <input type="text" ng-model="tc.taskToAdd.task" placeholder="Task">
+            <input type="text" ng-model="tc.taskToAdd.date" placeholder="Today's Date">
+            <input type="text" ng-model="tc.taskToAdd.due_date" placeholder="Due Date">
+            <input type="text" ng-model="tc.taskToAdd.notes" placeholder="Notes">
+            <input type="text" ng-model="tc.taskToAdd.complete" placeholder="Complete?">
+            <input type="submit" value="submit">
+        </form>
+        <br>
+        <br>
+        <h2>Tasks</h2>
+        <table class="task-inputs">
+            <thead>
+                <tr>
+                    <th>Task</th>
+                    <th>Submission Date</th>
+                    <th>Due Date</th>
+                    <th>Notes</th>
+                    <th>Complete?</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+
+
 </body>
+
 </html>
