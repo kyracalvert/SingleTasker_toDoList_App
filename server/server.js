@@ -10,9 +10,7 @@ const TaskSchema = new Schema ({
     date: {type: String},
     due_date: {type: String},
     notes: {type: String},
-    complete: {type: Boolean},
-    delete: {type: Boolean}
-
+    complete: {type: Boolean, default: false},
 });
 
 const mongoURI = "mongodb://localhost:27017/taskapp";
@@ -38,3 +36,18 @@ app.listen(PORT, () => {
     console.log('listening on port:', PORT);
     
 })
+
+// POST
+app.post('/task', (req, res) => {
+    console.log('POST to /task req.body =', req.body);
+    let taskFromClient = req.body;
+    const taskToAdd = new Task(taskFromClient);
+    taskToAdd.save().then(() => {
+      console.log('Task added:', taskToAdd);
+      res.sendStatus(201);
+    }).catch((error) => {
+      console.log(error);
+      res.sendStatus(500);
+    })
+  });
+  

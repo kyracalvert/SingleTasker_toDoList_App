@@ -31,6 +31,7 @@ CHECKLIST: Refer to Koala Holla group project
     [x] source in jQuery
 [x] Styles folder
     [x] source in style sheet
+[x] Source in Client.js
 [x] Mongo
     [x] Install Mongoose
     [x] Setup Mongoose
@@ -42,9 +43,10 @@ CHECKLIST: Refer to Koala Holla group project
     [x] Setup NG app and controller
     [x] Table to capture inputs: task, submit, complete, delete
         [ ] When task complete, its visual representation should change (ng-class)
-    [ ] Format table
+    [x] Format table
     [x] Buttons: submit, complete, delete
 [ ] Client
+    [x] Angular
     [ ] Logic for GET (add to table)
     [ ] Logic for POST (get info from form)
 [ ] Server
