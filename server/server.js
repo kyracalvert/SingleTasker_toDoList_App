@@ -48,14 +48,40 @@ app.post('/task', (req, res) => {
     console.log('POST to /task req.body =', req.body);
     let taskFromClient = req.body;
     const taskToAdd = new Task(taskFromClient);
-    taskToAdd.save().then(()=>{
+    taskToAdd.save().then(() => {
         console.log('Task added:', taskToAdd);
         res.sendStatus(201);
-    }).catch((error)=>{
+    }).catch((error) => {
         console.log(error);
         res.sendStatus(500);
     })
 });
+
+// PUT
+app.put('/task/complete/:id', (req, res) => {
+    console.log('Update:', req.params.id);
+
+    Task.findOne({ _id: req.params.id }).then((foundTask) => {
+        console.log(foundTask);
+        foundTask.completeTask = true;
+        foundTask.save().then((response) => {
+            res.sendStatus(200);
+        }).catch((error) => {
+            res.sendStatus(500);
+            console.log('error', error);
+        })
+    })
+});
+// End PUT
+
+app.delete('/task/deleteTask/:id', (req, res) => {
+    Task.findByIdAndRemove(req.params.id).then((response)=>{
+        res.sendStatus(200);
+    }).catch((error) => {
+        res.sendStatus(500);
+    });
+   
+})
 
 // Server
 app.listen(PORT, () => {

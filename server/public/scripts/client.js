@@ -16,7 +16,7 @@ myApp.controller('TaskController', function ($http) {
     }
 
     getTasksFromServer();
-    
+
     //Complete task (button)
     vm.completeTask = function (taskId) {
         $http({
@@ -52,5 +52,34 @@ myApp.controller('TaskController', function ($http) {
             alert('unable to post task')
         })
     }
+
+    vm.completeTask = function (taskId) {
+        console.log('in taskId', taskId);
+        $http({
+            method: 'PUT',
+            url: '/task/complete/' + taskId
+        }).then(function (response) {
+            getTasksFromServer();
+            console.log(response);
+        }).catch(function (error) {
+            alert('Unable to complete task.')
+            console.log(error);
+        })
+    }
+
+    vm.deleteTask = function (taskId) {
+        console.log('delete task with id: ', taskId);
+        $http({
+            method: 'DELETE',
+            url: '/task/deleteTask/' + taskId
+        }).then(function (response) {
+            getTasksFromServer();
+        }).catch(function (error) {
+            alert('Unable to delete')
+            console.log(error);
+        })
+
+    }
 })
+
 
