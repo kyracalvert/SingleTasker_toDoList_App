@@ -32,22 +32,19 @@ app.use(bodyParser.json()); // This line is required for Angular
 // Static files
 app.use(express.static('server/public'));
 
+app.get('/tasks', (req, res) => {
+    console.log('/tasks GET hit');
+    
+})
 app.listen(PORT, () => {
     console.log('listening on port:', PORT);
     
 })
 
-// POST
-app.post('/task', (req, res) => {
-    console.log('POST to /task req.body =', req.body);
-    let taskFromClient = req.body;
-    const taskToAdd = new Task(taskFromClient);
-    taskToAdd.save().then(() => {
-      console.log('Task added:', taskToAdd);
-      res.sendStatus(201);
-    }).catch((error) => {
-      console.log(error);
-      res.sendStatus(500);
-    })
-  });
+
+  
+
+
+
+
   

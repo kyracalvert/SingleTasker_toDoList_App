@@ -38,6 +38,7 @@ CHECKLIST: Refer to Koala Holla group project
     [x] Create database Schema
     [x] Create new database via server.js
     [x] Connect to Mongo via server.js
+    [ ] Ensure ROBO3T is logging database
 [ ] HTML (using AngularJS)
     [x] Form: input fields to capture to-dos
     [x] Setup NG app and controller
