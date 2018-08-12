@@ -7,14 +7,15 @@ const Schema = mongoose.Schema;
 
 const TaskSchema = new Schema({
     task: { type: String },
-    date: { type: String },
-    due_date: { type: String },
+    date: { type: Number },
+    due_date: { type: Number },
     notes: { type: String },
     complete: { type: Boolean, default: false },
 });
 
 const mongoURI = "mongodb://localhost:27017/taskapp";
 const Task = mongoose.model('tasks', TaskSchema);
+
 
 mongoose.connect(mongoURI, { useNewUrlParser: true });
 
@@ -63,7 +64,7 @@ app.put('/task/complete/:id', (req, res) => {
 
     Task.findOne({ _id: req.params.id }).then((foundTask) => {
         console.log(foundTask);
-        foundTask.completeTask = true;
+        foundTask.complete = true;
         foundTask.save().then((response) => {
             res.sendStatus(200);
         }).catch((error) => {

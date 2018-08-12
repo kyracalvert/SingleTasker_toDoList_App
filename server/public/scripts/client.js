@@ -17,15 +17,15 @@ myApp.controller('TaskController', function ($http) {
 
     getTasksFromServer();
 
-    //Complete task (button)
-    vm.completeTask = function (taskId) {
-        $http({
-            method: 'PUT',
-            url: '/completeTask/' + taskId
-        }).then(function (response) {
-            getTasksFromServer();
-        })
-    }
+    // //Complete task (button)
+    // vm.completeTask = function (taskId) {
+    //     $http({
+    //         method: 'PUT',
+    //         url: '/completeTask/' + taskId
+    //     }).then(function (response) {
+    //         getTasksFromServer();
+    //     })
+    // }
 
     function getTasksFromServer() {
         console.log('in getTasksFromServer');

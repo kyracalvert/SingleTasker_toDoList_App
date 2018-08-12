@@ -47,7 +47,7 @@
             </thead>
            
             <tbody id="task-outputs">
-                <tr ng-repeat="task in tc.tasks" ng-class="{{task.complete}} ? 'yes' : 'no'">
+                <tr ng-repeat="task in tc.tasks" ng-class="task.complete ? 'yes' : 'no'">
                     <td>{{task.task}}</td>
                     <td>{{task.date}}</td>
                     <td>{{task.due_date}}</td>
