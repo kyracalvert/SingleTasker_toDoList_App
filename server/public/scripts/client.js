@@ -16,6 +16,16 @@ myApp.controller('TaskController', function ($http) {
     }
 
     getTasksFromServer();
+    
+    //Complete task (button)
+    vm.completeTask = function (taskId) {
+        $http({
+            method: 'PUT',
+            url: '/completeTask/' + taskId
+        }).then(function (response) {
+            getTasksFromServer();
+        })
+    }
 
     function getTasksFromServer() {
         console.log('in getTasksFromServer');
@@ -26,9 +36,21 @@ myApp.controller('TaskController', function ($http) {
             console.log('back from server with:', response.data);
             vm.tasks = response.data;
         }).catch(function (error) {
-            console.log('error retrieiving from server', error);  
+            console.log('error retrieiving from server', error);
         });
-        // end getTasksFromServer
+    }// end getTasksFromServer
+
+    vm.addTask = function (taskIn) {
+        console.log(taskIn);
+        $http({
+            method: 'POST',
+            url: '/task',
+            data: taskIn
+        }).then(function (response) {
+            getTasksFromServer();
+        }).catch(function (error) {
+            alert('unable to post task')
+        })
     }
 })
 

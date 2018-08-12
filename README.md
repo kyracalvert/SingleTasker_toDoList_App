@@ -48,10 +48,10 @@ CHECKLIST: Refer to Koala Holla group project
     [x] Buttons: submit, complete, delete
 [ ] Client
     [x] Angular
-    [ ] Logic for GET (add to table)
+    [x] Logic for GET (add to table)
     [ ] Logic for POST (get info from form)
 [ ] Server
-    [ ] Logic for GET
+    [x] Logic for GET
     [ ] Logic for POST 
     [ ] Logic for submit
     [ ] Logic for complete

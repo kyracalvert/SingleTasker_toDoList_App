@@ -16,7 +16,7 @@
 <body ng-app="myApp">
     <div class="container" ng-controller="TaskController as tc">
         <header>
-                Is angular working??????? {{1 === 1}}
+            Is angular working??????? {{1 === 1}}
             <h1>TaskApp</h1>
             <h3>You have a lot to do! TaskApp helps you keep track.</h3>
         </header>
@@ -28,7 +28,6 @@
             <input type="text" ng-model="tc.taskToAdd.date" placeholder="Today's Date">
             <input type="text" ng-model="tc.taskToAdd.due_date" placeholder="Due Date">
             <input type="text" ng-model="tc.taskToAdd.notes" placeholder="Notes">
-            <input type="text" ng-model="tc.taskToAdd.complete" placeholder="Completed?">
             <input type="submit" value="submit">
         </form>
         <br>
@@ -46,7 +45,7 @@
                     <th>Delete</th>
                 </tr>
             </thead>
-
+           
             <tbody id="task-outputs">
                 <tr ng-repeat="task in tc.tasks" ng-class="{{task.complete}} ? 'yes' : 'no'">
                     <td>{{task.task}}</td>
@@ -54,12 +53,12 @@
                     <td>{{task.due_date}}</td>
                     <td>{{task.notes}}</td>
                     <td>
-                        <button ng-click="tc.complete(tasks._id)">Complete</button>
+                        <button ng-click="tc.completeTask(task._id)">Complete</button>
                     </td>
                     <td>{{task.complete}}</td>
                     <td>
-                        <button ng-click="tc.delete(tasks._id)">Delete Task</button>
-                    </td>   
+                        <button ng-click="tc.deleteTask(task._id)">Delete Task</button>
+                    </td>
                 </tr>
             </tbody>
         </table>
