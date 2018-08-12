@@ -1,13 +1,62 @@
-body {
+/* body {
     background-color: lightcoral;
+} */
+
+table {
+    height: 80%;
+    width: 80%;
+    margin: 0 auto;
+
 }
 
 th, td {
-    padding: 15px;
+    padding: 9px;
     text-align: left;
 }
 
+th {
+    background-color: #659390;
+    color: white;
+}
+
 td {
-    height: 50px;
+    height: 20px;
     vertical-align: bottom;
+}
+
+
+.no {
+    background-color: #A6E1C2;
+}
+
+.yes {
+    background-color: #CABBAD;
+    
+}
+
+.complete {
+    float: right;
+}
+
+.delete {
+    float: right;
+    background-color: black;
+    border: none;
+    color: white;
+}
+
+.notes {
+    width: 50px;
+}
+
+h2 {
+    height: 80%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.task-form {
+    height: 80%;
+    width: 80%;
+    margin: 0 auto;
 }

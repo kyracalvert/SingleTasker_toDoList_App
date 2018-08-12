@@ -13,7 +13,7 @@
 
 </head>
 
-<body ng-app="myApp">
+<body ng-app="myApp" background="images/blue-abstract.png">
     <div class="container" ng-controller="TaskController as tc">
         <header>
             Is angular working??????? {{1 === 1}}
@@ -22,30 +22,30 @@
         </header>
         <br>
         <br>
-        <h2>Add Tasks</h2>
-        <form id="task-form" ng-submit="tc.addTask(taskToAdd)">
+        <h2>Add New Task:</h2>
+        <form class="task-form"id="task-form" ng-submit="tc.addTask(taskToAdd)">
             <input type="text" ng-model="tc.taskToAdd.task" placeholder="Task">
             <input type="text" ng-model="tc.taskToAdd.date" placeholder="Today's Date">
             <input type="text" ng-model="tc.taskToAdd.due_date" placeholder="Due Date">
-            <input type="text" ng-model="tc.taskToAdd.notes" placeholder="Notes">
+            <input type="text" class="notes" ng-model="tc.taskToAdd.notes" placeholder="Notes">
             <input type="submit" value="submit">
         </form>
         <br>
         <br>
-        <h2>Tasks</h2>
         <table class="task-inputs">
+                <h2>My Tasks:</h2>
             <thead>
                 <tr>
                     <th>Task</th>
                     <th>Submission Date</th>
                     <th>Due Date</th>
                     <th>Notes</th>
-                    <th>Click when task is complete:</th>
-                    <th>Completed?</th>
+                    <th>Complete Task?</th>
+                    <!-- <th>Completed?</th> -->
                     <th>Delete</th>
                 </tr>
             </thead>
-           
+
             <tbody id="task-outputs">
                 <tr ng-repeat="task in tc.tasks" ng-class="task.complete ? 'yes' : 'no'">
                     <td>{{task.task}}</td>
@@ -53,11 +53,11 @@
                     <td>{{task.due_date}}</td>
                     <td>{{task.notes}}</td>
                     <td>
-                        <button ng-click="tc.completeTask(task._id)">Complete</button>
+                        <button class="complete" ng-click="tc.completeTask (task._id)">Complete</button>
                     </td>
-                    <td>{{task.complete}}</td>
+                    <!-- <td>{{task.complete}}</td> -->
                     <td>
-                        <button ng-click="tc.deleteTask(task._id)">Delete Task</button>
+                        <button class="delete" ng-click="tc.deleteTask(task._id)">Delete Task</button>
                     </td>
                 </tr>
             </tbody>
