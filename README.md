@@ -43,7 +43,7 @@ CHECKLIST: Refer to Koala Holla group project
     [x] Form: input fields to capture to-dos
     [x] Setup NG app and controller
     [x] Table to capture inputs: task, submit, complete, delete
-        [ ] When task complete, its visual representation should change (ng-class)
+        [x] When task complete, its visual representation should change (ng-class)
     [x] Format table
     [x] Buttons: submit, complete, delete
 [x] Client

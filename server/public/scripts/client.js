@@ -21,6 +21,10 @@ myApp.controller('TaskController', function ($http) {
         }).then(function (response) {
             console.log('back from server with:', response.data);
             vm.tasks = response.data;
+            vm.dateIn="";
+            vm.dueIn="";
+            vm.taskIn="";
+            vm.notesIn="";
         }).catch(function (error) {
             console.log('error retrieiving from server', error);
         });

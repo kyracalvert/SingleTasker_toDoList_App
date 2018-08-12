@@ -3,8 +3,8 @@
 } */
 
 table {
-    /* height: 50%;
-    width: 80%; */
+    height: 50%;
+    width: 80%;
     margin: 0 auto;
     
 
@@ -19,6 +19,10 @@ th {
     background-color: #659390;
     color: white;
 }
+
+table, th, td {
+    border: 1px solid black;
+ }
 
 
 .no {
@@ -43,14 +47,14 @@ th {
 
 
 h2 {
-    /* height: 80%;
-    width: 80%; */
+    height: 80%;
+    width: 80%;
     margin: 0 auto;
 }
 
 .task-form {
-    /* height: 80%;
-    width: 80%; */
+    height: 80%;
+    width: 80%;
     margin: 0 auto;
 }
 
