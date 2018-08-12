@@ -18,6 +18,9 @@ th, td {
 th {
     background-color: #659390;
     color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: smaller;
 }
 
 table, th, td {
@@ -34,22 +37,12 @@ table, th, td {
     
 }
 
-.complete {
-    float: right;
-}
-
-.delete {
-    float: right;
-    background-color: black;
-    border: none;
-    color: white;
-}
-
-
 h2 {
     height: 80%;
     width: 80%;
     margin: 0 auto;
+    font-variant: small-caps;
+    color: #7B86AD;
 }
 
 .task-form {
@@ -60,4 +53,16 @@ h2 {
 
 .date {
     margin-top: 10px;
+}
+
+.btn-primary {
+    margin-top: 50px;
+}
+
+#danger {
+    text-align: right;
+}
+
+#success {
+    text-align: right;
 }

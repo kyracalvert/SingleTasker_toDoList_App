@@ -16,12 +16,12 @@
 <body ng-app="myApp" background="images/blue-abstract.png">
     <div class="header-intro">
 
-            <div id="pig-container">
-                <h1 class=>TaskApp
-                    <small class="text-muted">Inspired Efficiency</small>
-                </h1>
-            </div>
+        <div id="pig-container">
+            <h1 class=>TaskApp
+                <small class="text-muted">Inspired Efficiency</small>
+            </h1>
         </div>
+    </div>
     <div class="container" ng-controller="TaskController as tc">
         <header>
             <!-- Is angular working??????? {{1 === 1}}
@@ -31,21 +31,23 @@
         <br>
         <br>
         <h2>Add New Task:</h2>
-        <form class="task-form"id="task-form" ng-submit="tc.addTask()">
-                <input type="text" class="date"ng-model="tc.dateIn" placeholder="Today's Date">
-                <input type="text" class="due_date"ng-model="tc.dueIn" placeholder="Due Date">
-                <br>
+        <form class="task-form" id="task-form" ng-submit="tc.addTask()">
+            <input type="text" class="date" ng-model="tc.dateIn" placeholder="Today's Date">
+            <input type="text" class="due_date" ng-model="tc.dueIn" placeholder="Due Date">
+            <br>
             <textarea rows="2" cols="25" ng-model="tc.taskIn" placeholder="Task"></textarea>
             <textarea rows="2" cols="25" class="notes" ng-model="tc.notesIn" placeholder="Notes"></textarea>
-            <input type="submit" value="submit">
+            <button class ="btn-primary" type="submit" style="float: right">Submit</button>
+            <!-- <div style="overflow: hidden; padding-right: .5em;">
+            </div>​ -->
         </form>
         <br>
         <br>
         <table class="task-inputs">
-                <h2>My Tasks:</h2>
+            <h2>My Tasks:</h2>
             <thead>
                 <tr>
-                    <th>Submission Date</th>
+                    <th>Today's Date</th>
                     <th>Due Date</th>
                     <th>Task</th>
                     <th>Notes</th>
@@ -61,12 +63,12 @@
                     <td>{{task.due_date}}</td>
                     <td>{{task.task}}</td>
                     <td>{{task.notes}}</td>
-                    <td>
-                        <button class="complete" ng-click="tc.completeTask (task._id)" ng-disabled="task.complete">Complete</button>
+                    <td id="success">
+                        <button class="btn-success"id="complete" ng-click="tc.completeTask (task._id)" ng-disabled="task.complete">&#10003</button> 
                     </td>
                     <!-- <td>{{task.complete}}</td> -->
-                    <td>
-                        <button class="delete" ng-click="tc.deleteTask(task._id)">Delete Task</button>
+                    <td id="danger">
+                        <button class="btn btn-danger" ng-model="tc.deleteTask" ng-click="tc.deleteTask(task._id)">X</button>
                     </td>
                 </tr>
             </tbody>
