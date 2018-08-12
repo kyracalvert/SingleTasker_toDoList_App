@@ -6,9 +6,9 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const TaskSchema = new Schema({
-    task: { type: String },
     date: { type: Number },
     due_date: { type: Number },
+    task: { type: String },
     notes: { type: String },
     complete: { type: Boolean, default: false },
 });

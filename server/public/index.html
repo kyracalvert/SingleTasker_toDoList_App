@@ -24,10 +24,11 @@
         <br>
         <h2>Add New Task:</h2>
         <form class="task-form"id="task-form" ng-submit="tc.addTask(taskToAdd)">
-            <input type="text" ng-model="tc.taskToAdd.task" placeholder="Task">
-            <input type="text" ng-model="tc.taskToAdd.date" placeholder="Today's Date">
-            <input type="text" ng-model="tc.taskToAdd.due_date" placeholder="Due Date">
-            <input type="text" class="notes" ng-model="tc.taskToAdd.notes" placeholder="Notes">
+                <input type="number" class="date"ng-model="tc.taskToAdd.date" placeholder="Today's Date">
+                <input type="number" class="due_date"ng-model="tc.taskToAdd.due_date" placeholder="Due Date">
+                <br>
+            <textarea rows="2" cols="25" ng-model="tc.taskToAdd.task" placeholder="Task"></textarea>
+            <textarea rows="2" cols="25" class="notes" ng-model="tc.taskToAdd.notes" placeholder="Notes"></textarea>
             <input type="submit" value="submit">
         </form>
         <br>
@@ -36,9 +37,9 @@
                 <h2>My Tasks:</h2>
             <thead>
                 <tr>
-                    <th>Task</th>
                     <th>Submission Date</th>
                     <th>Due Date</th>
+                    <th>Task</th>
                     <th>Notes</th>
                     <th>Complete Task?</th>
                     <!-- <th>Completed?</th> -->
@@ -48,9 +49,9 @@
 
             <tbody id="task-outputs">
                 <tr ng-repeat="task in tc.tasks" ng-class="task.complete ? 'yes' : 'no'">
-                    <td>{{task.task}}</td>
                     <td>{{task.date}}</td>
                     <td>{{task.due_date}}</td>
+                    <td>{{task.task}}</td>
                     <td>{{task.notes}}</td>
                     <td>
                         <button class="complete" ng-click="tc.completeTask (task._id)">Complete</button>

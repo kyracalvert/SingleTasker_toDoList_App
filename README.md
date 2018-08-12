@@ -38,7 +38,7 @@ CHECKLIST: Refer to Koala Holla group project
     [x] Create database Schema
     [x] Create new database via server.js
     [x] Connect to Mongo via server.js
-    [ ] Ensure ROBO3T is logging database
+    [x] Ensure ROBO3T is logging database
 [ ] HTML (using AngularJS)
     [x] Form: input fields to capture to-dos
     [x] Setup NG app and controller
@@ -46,15 +46,15 @@ CHECKLIST: Refer to Koala Holla group project
         [ ] When task complete, its visual representation should change (ng-class)
     [x] Format table
     [x] Buttons: submit, complete, delete
-[ ] Client
+[x] Client
     [x] Angular
     [x] Logic for GET (add to table)
     [x] Logic for POST (get info from form)
-[ ] Server
+[x] Server
     [x] Logic for GET
     [x] Logic for POST 
-    [ ] Logic for submit
-    [ ] Logic for complete
-    [ ] Logic for delete
+    [x] Logic for submit
+    [x] Logic for complete
+    [x] Logic for delete
 
 

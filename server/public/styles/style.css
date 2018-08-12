@@ -45,9 +45,6 @@ td {
     color: white;
 }
 
-.notes {
-    width: 50px;
-}
 
 h2 {
     height: 80%;
@@ -59,4 +56,8 @@ h2 {
     height: 80%;
     width: 80%;
     margin: 0 auto;
+}
+
+.date {
+    margin-top: 10px;
 }

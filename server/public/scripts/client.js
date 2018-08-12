@@ -9,10 +9,11 @@ myApp.controller('TaskController', function ($http) {
     //Define data structure
     vm.tasks = [];
     vm.taskToAdd = {
-        task: vm.taskIn,
         date: vm.dateIn,
         due_date: vm.dueIn,
-        notes: vm.notesIn
+        task: vm.taskIn,
+        notes: vm.notesIn,
+        complete: vm.completeIn
     }
 
     getTasksFromServer();
