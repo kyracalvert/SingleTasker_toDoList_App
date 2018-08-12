@@ -49,10 +49,10 @@ CHECKLIST: Refer to Koala Holla group project
 [ ] Client
     [x] Angular
     [x] Logic for GET (add to table)
-    [ ] Logic for POST (get info from form)
+    [x] Logic for POST (get info from form)
 [ ] Server
     [x] Logic for GET
-    [ ] Logic for POST 
+    [x] Logic for POST 
     [ ] Logic for submit
     [ ] Logic for complete
     [ ] Logic for delete
