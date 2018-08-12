@@ -30,24 +30,26 @@
         </header>
         <br>
         <br>
-        <h2>Add New Task:</h2>
+        <h3>Add New Task:</h3>
         <form class="task-form" id="task-form" ng-submit="tc.addTask()">
             <input type="text" class="date" ng-model="tc.dateIn" placeholder="Today's Date">
             <input type="text" class="due_date" ng-model="tc.dueIn" placeholder="Due Date">
             <br>
             <textarea rows="2" cols="25" ng-model="tc.taskIn" placeholder="Task"></textarea>
             <textarea rows="2" cols="25" class="notes" ng-model="tc.notesIn" placeholder="Notes"></textarea>
-            <button class ="btn-primary" type="submit" style="float: right">Submit</button>
+            <button class="btn-primary" type="submit" style="float: right">Submit</button>
             <!-- <div style="overflow: hidden; padding-right: .5em;">
             </div>​ -->
         </form>
         <br>
         <br>
+        <br>
+        <br>
         <table class="task-inputs">
-            <h2>My Tasks:</h2>
+            <h3>My Tasks:</h3>
             <thead>
                 <tr>
-                    <th>Today's Date</th>
+                    <th>Add Date</th>
                     <th>Due Date</th>
                     <th>Task</th>
                     <th>Notes</th>
@@ -64,7 +66,7 @@
                     <td>{{task.task}}</td>
                     <td>{{task.notes}}</td>
                     <td id="success">
-                        <button class="btn-success"id="complete" ng-click="tc.completeTask (task._id)" ng-disabled="task.complete">&#10003</button> 
+                        <button class="btn-success" id="complete" ng-click="tc.completeTask (task._id)" ng-disabled="task.complete">&#10003</button>
                     </td>
                     <!-- <td>{{task.complete}}</td> -->
                     <td id="danger">

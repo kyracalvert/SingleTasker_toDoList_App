@@ -76,12 +76,12 @@ app.put('/task/complete/:id', (req, res) => {
 // End PUT
 
 app.delete('/task/deleteTask/:id', (req, res) => {
-    Task.findByIdAndRemove(req.params.id).then((response)=>{
+    Task.findByIdAndRemove(req.params.id).then((response) => {
         res.sendStatus(200);
     }).catch((error) => {
         res.sendStatus(500);
     });
-   
+
 })
 
 // Server
