@@ -30,6 +30,8 @@ CHECKLIST: Refer to Koala Holla group project
 [x] Styles folder
     [x] source in style sheet
 [x] Source in Client.js
+[x] Bring in Bootstrap css and js into vendors folder
+    [x] Source Bootstrap into index.html
 [x] Mongo
     [x] Install Mongoose
     [x] Setup Mongoose
