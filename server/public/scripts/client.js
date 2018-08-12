@@ -21,7 +21,7 @@ myApp.controller('TaskController', function ($http) {
         console.log('in getTasksFromServer');
         $http({
             method: 'GET',
-            url: '/tasks'
+            url: '/task'
         }).then(function (response) {
             console.log('back from server with:', response.data);
             vm.tasks = response.data;
