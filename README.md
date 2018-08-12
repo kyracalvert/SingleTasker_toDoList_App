@@ -27,8 +27,6 @@ CHECKLIST: Refer to Koala Holla group project
 [x] install express
 [x] bring Angular file into project
     [x] source AngularJS into index.html
-[x] bring jQuery file into project
-    [x] source in jQuery
 [x] Styles folder
     [x] source in style sheet
 [x] Source in Client.js
