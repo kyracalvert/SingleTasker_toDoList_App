@@ -22,12 +22,12 @@
         <br>
         <br>
         <h2>Add New Task:</h2>
-        <form class="task-form"id="task-form" ng-submit="tc.addTask(taskToAdd)">
-                <input type="number" class="date"ng-model="tc.taskToAdd.date" placeholder="Today's Date">
-                <input type="number" class="due_date"ng-model="tc.taskToAdd.due_date" placeholder="Due Date">
+        <form class="task-form"id="task-form" ng-submit="tc.addTask()">
+                <input type="number" class="date"ng-model="tc.dateIn" placeholder="Today's Date">
+                <input type="number" class="due_date"ng-model="tc.dueIn" placeholder="Due Date">
                 <br>
-            <textarea rows="2" cols="25" ng-model="tc.taskToAdd.task" placeholder="Task"></textarea>
-            <textarea rows="2" cols="25" class="notes" ng-model="tc.taskToAdd.notes" placeholder="Notes"></textarea>
+            <textarea rows="2" cols="25" ng-model="tc.taskIn" placeholder="Task"></textarea>
+            <textarea rows="2" cols="25" class="notes" ng-model="tc.notesIn" placeholder="Notes"></textarea>
             <input type="submit" value="submit">
         </form>
         <br>

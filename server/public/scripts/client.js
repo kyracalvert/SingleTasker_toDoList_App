@@ -8,13 +8,7 @@ myApp.controller('TaskController', function ($http) {
 
     //Define data structure
     vm.tasks = [];
-    vm.taskToAdd = {
-        date: vm.dateIn,
-        due_date: vm.dueIn,
-        task: vm.taskIn,
-        notes: vm.notesIn,
-        complete: vm.completeIn
-    }
+  
 
     getTasksFromServer();
 
@@ -41,12 +35,19 @@ myApp.controller('TaskController', function ($http) {
         });
     }// end getTasksFromServer
 
-    vm.addTask = function (taskIn) {
-        console.log(taskIn);
+    vm.addTask = function () {
+        vm.taskToAdd = {
+            date: vm.dateIn,
+            due_date: vm.dueIn,
+            task: vm.taskIn,
+            notes: vm.notesIn,
+            complete: vm.completeIn
+        }
+        console.log(vm.taskToAdd);
         $http({
             method: 'POST',
             url: '/task',
-            data: taskIn
+            data: vm.taskToAdd
         }).then(function (response) {
             getTasksFromServer();
         }).catch(function (error) {
