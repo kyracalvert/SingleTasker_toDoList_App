@@ -1,22 +1,22 @@
 # SingleTasker_toDoList_App
 To-Do List Application
 
--Create a front end experience that allows a user to create a task. 
--When the task is created, it should be stored inside of a database. 
--Whenever a task is created the front end should refresh to show all tasks that need to be completed.
--Each task should have an option to 'Complete' or 'Delete'.
--When a task is complete, its visual representation should change on the front end 
--Whether or not a task is complete should also be stored in the database.
--Deleting a task should remove it both from the Front End as well as the Database.
+1. Create a front end experience that allows a user to create a task. 
+2. When the task is created, it should be stored inside of a database. 
+3. Whenever a task is created the front end should refresh to show all tasks that need to be completed.
+4. Each task should have an option to 'Complete' or 'Delete'.
+5. When a task is complete, its visual representation should change on the front end 
+6. Whether or not a task is complete should also be stored in the database.
+7. Deleting a task should remove it both from the Front End as well as the Database.
 
 
 # Built With:
--Visual Studio Code
--AngularJS
--MongoDB
--Node 
--Express
--Bootstrap
+1. Visual Studio Code
+2. AngularJS
+3. MongoDB
+4. Node.js 
+5. Express
+6. Bootstrap
 
 # Installing:
 1. Download this project.
@@ -25,24 +25,27 @@ To-Do List Application
     2. npm start
     
 # Completed Features:
--Input fields to name task, notes, submit and due dates
--Submit button that addes tasks to table
--Table that captures task inputs and stores them in a database
--Complete button that populated with each submitted task
-    -When pressed, this button updates the task in the database (from false to true), puts a line through the task data on the DOM, and deactivates itself. 
--Delete button that populates with each submitted task
-    -When pressed, this button removes the task from the database and the table on the DOM.
+1. Input fields to name tasks, notes, submit and due dates
+2. Submit button that addes tasks to table
+3. Table that captures task inputs and stores them in a database
+4. Complete button that populates when each submitted task
+    1. When pressed, this button updates the task in the database (from false to true), puts a line through the task data on        the DOM, and deactivates itself. 
+5. Delete button that populates with each submitted task
+    1. When pressed, this button removes the task from the database and the table on the DOM.
 
 # Screen Shot: 
 <img width="1438" alt="screen shot 2018-08-13 at 11 45 37 am" src="https://user-images.githubusercontent.com/34479779/44045802-4fa14740-9eef-11e8-85fa-d8952e6f6fdf.png">
 
 # Next Steps:
--When the user clicks on any table data box, that box should become an editable text field
--Tasks should submit to the table upon pressing 'enter' on the keyboard
--Completed tasks should float to the bottom of the page, while remaining tasks stay at the top
--Organize tasks by due date
+1. When the user clicks on any table data box, that box should become an editable text field
+2. Tasks should submit to the table upon pressing 'enter' on the keyboard
+3. Completed tasks should float to the bottom of the page, while remaining tasks stay at the top
+4. Organize tasks by due date
+
+# Author:
+Kyra Crawford Calvert
     
-CHECKLIST: Refer to Koala Holla group project
+Base Mode CHECKLIST: 
 [x] Write README
 [x] Setup project folders and files
 [x] spin up server
@@ -62,7 +65,7 @@ CHECKLIST: Refer to Koala Holla group project
     [x] Create new database via server.js
     [x] Connect to Mongo via server.js
     [x] Ensure ROBO3T is logging database
-[ ] HTML (using AngularJS)
+[x] HTML (using AngularJS)
     [x] Form: input fields to capture to-dos
     [x] Setup NG app and controller
     [x] Table to capture inputs: task, submit, complete, delete
