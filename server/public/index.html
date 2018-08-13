@@ -15,7 +15,8 @@
 
 <!-- Angular App (ng-app) -->
 <!-- + adding a background image to the entire page -->
-<body ng-app="myApp" background="images/blue-abstract.png"> 
+
+<body ng-app="myApp" background="images/blue-abstract.png">
     <div class="header-intro">
 
         <!-- 'small' is a bootstrap style and 'text-muted' is a bootstrap class -->
@@ -69,7 +70,7 @@
                         <button class="btn-success" id="complete" ng-click="tc.completeTask (task._id)" ng-disabled="task.complete">&#10003</button>
                     </td>
                     <td id="danger">
-                        <button class="btn btn-danger" ng-model="tc.deleteTask" ng-click="tc.deleteTask(task._id)">X</button>
+                        <button class="btn btn-danger" ng-model="tc.deleteTask" ng-click="tc.deleteTask(task._id)">x</button>
                     </td>
                 </tr>
             </tbody>
