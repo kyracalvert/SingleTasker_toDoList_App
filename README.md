@@ -1,13 +1,13 @@
 # SingleTasker_toDoList_App
 ## MEAN Stack To-Do List Application
 
-1. Create a front end experience that allows a user to create a task. 
+1. Create a Front End experience that allows a user to create a task. 
 2. When the task is created, it should be stored inside of a database. 
-3. Whenever a task is created the front end should refresh to show all tasks that need to be completed.
+3. When a new task is added, the front end should refresh to show all tasks that need to be completed.
 4. Each task should have an option to 'Complete' or 'Delete'.
-5. When a task is complete, its visual representation should change on the front end 
-6. Whether or not a task is complete should also be stored in the database.
-7. Deleting a task should remove it both from the Front End as well as the Database.
+5. When a task is complete, its visual representation should change on the Front End
+6. Whether or not a task is complete should be stored in the database.
+7. Deleting a task should remove it, both from the Front End as well as the Database.
 
 
 # Built With:
@@ -19,7 +19,7 @@
 6. Bootstrap
 
 # Installing:
-1. Download this project.
+1. Fork & Clone this repository.
 2. In terminal:
     1. npm install
     2. npm start
