@@ -1,7 +1,7 @@
 # SingleTasker_toDoList_App
 ## MEAN Stack To-Do List Application
 
-1. Create a Front End experience that allows a user to create a task. 
+1. Create a Front End experience that allows a user to submit a task. 
 2. When the task is created, it should be stored inside of a database. 
 3. When a new task is added, the front end should refresh to show all tasks that need to be completed.
 4. Each task should have an option to 'Complete' or 'Delete'.
