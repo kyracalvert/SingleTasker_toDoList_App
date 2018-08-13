@@ -2,6 +2,7 @@ console.log('js');
 
 let myApp = angular.module('myApp', []);
 
+// Connect to client-side ng-app
 myApp.controller('TaskController', function ($http) {
     console.log('TaskController is ready');
     const vm = this;
@@ -25,6 +26,7 @@ myApp.controller('TaskController', function ($http) {
             vm.dueIn = "";
             vm.taskIn = "";
             vm.notesIn = "";
+            // "" Empties NG input fields upon submit 
         }).catch(function (error) {
             console.log('error retrieiving from server', error);
         });
@@ -48,7 +50,7 @@ myApp.controller('TaskController', function ($http) {
         }).catch(function (error) {
             alert('unable to post task')
         })
-    }
+    } // end addTask POST
 
     vm.completeTask = function (taskId) {
         console.log('in taskId', taskId);
@@ -62,7 +64,7 @@ myApp.controller('TaskController', function ($http) {
             alert('Unable to complete task.')
             console.log(error);
         })
-    }
+    } // end completeTask PUT
 
     vm.deleteTask = function (taskId) {
         console.log('delete task with id: ', taskId);
@@ -76,7 +78,7 @@ myApp.controller('TaskController', function ($http) {
             console.log(error);
         })
 
-    }
+    } // end deleteTask DELETE method
 })
 
 

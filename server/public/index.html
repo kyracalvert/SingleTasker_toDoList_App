@@ -13,24 +13,24 @@
 
 </head>
 
+<!-- Angular App (ng-app) -->
 <body ng-app="myApp" background="images/blue-abstract.png">
     <div class="header-intro">
 
-        <div class="page-header">
+        <!-- 'small' is a bootstrap style and 'text-muted' is a bootstrap class -->
+        <div>
             <h1 class=>SingleTasker |
                 <small class="text-muted">Inspired Efficiency.</small>
             </h1>
         </div>
+        <!-- Angular controller and controller nickname -->
     </div>
     <div class="container" ng-controller="TaskController as tc">
-        <header>
-            <!-- Is angular working??????? {{1 === 1}}
-            <h1>TaskApp</h1>
-            <h3>You have a lot to do! TaskApp helps you keep track.</h3> -->
-        </header>
         <br>
         <br>
+        <!-- Add New Task input form -->
         <h2>Add New Task:</h2>
+        <!-- 'textarea' can be used to provide more typing space via columns and rows.  -->
         <form class="task-form" id="task-form" ng-submit="tc.addTask()">
             <input type="text" class="date" ng-model="tc.dateIn" placeholder="Today's Date">
             <input type="text" class="due_date" ng-model="tc.dueIn" placeholder="Due Date">
@@ -38,13 +38,13 @@
             <textarea rows="2" cols="25" ng-model="tc.taskIn" placeholder="Task"></textarea>
             <textarea rows="2" cols="25" class="notes" ng-model="tc.notesIn" placeholder="Notes"></textarea>
             <button class="btn-primary" type="submit" style="float: right">Submit</button>
-            <!-- <div style="overflow: hidden; padding-right: .5em;">
-            </div>​ -->
         </form>
         <br>
         <br>
         <br>
         <br>
+        <!-- Input(s) table to display on DOM -->
+        <!-- Table header -->
         <table class="task-inputs">
             <h3>My Tasks:</h3>
             <thead>
@@ -54,11 +54,10 @@
                     <th>Task</th>
                     <th>Notes</th>
                     <th>Complete Task?</th>
-                    <!-- <th>Completed?</th> -->
                     <th>Delete</th>
                 </tr>
             </thead>
-
+            <!-- Table body (will capture inputs and display them on the DOM) -->
             <tbody id="task-outputs">
                 <tr ng-repeat="task in tc.tasks" ng-class="task.complete ? 'yes' : 'no'">
                     <td>{{task.date}}</td>
@@ -68,7 +67,6 @@
                     <td id="success">
                         <button class="btn-success" id="complete" ng-click="tc.completeTask (task._id)" ng-disabled="task.complete">&#10003</button>
                     </td>
-                    <!-- <td>{{task.complete}}</td> -->
                     <td id="danger">
                         <button class="btn btn-danger" ng-model="tc.deleteTask" ng-click="tc.deleteTask(task._id)">X</button>
                     </td>
