@@ -25,13 +25,13 @@
     2. npm start
     
 # Completed Features:
-1. Input fields to name tasks, notes, submit and due dates
-2. Submit button that addes tasks to table
-3. Table that captures task inputs and stores them in a database
-4. Complete button that populates when each submitted task
+- [x] Input fields to add tasks, notes, submission and due dates
+- [x] Submit button that adds tasks to table
+- [x] Table that captures task inputs and stores them in a database
+- [x] Complete button that populates when each task is submitted
     1. When pressed, this button updates the task in the database (from false to true), puts a line through the task data on        the DOM, and deactivates itself. 
-5. Delete button that populates with each submitted task
-    1. When pressed, this button removes the task from the database and the table on the DOM.
+- [x] Delete button that populates with each submitted task
+    1. When pressed, this button removes the task from the database, as well as from the table on the DOM.
 
 # Screen Shot: 
 <img width="1438" alt="screen shot 2018-08-13 at 11 45 37 am" src="https://user-images.githubusercontent.com/34479779/44045802-4fa14740-9eef-11e8-85fa-d8952e6f6fdf.png">
