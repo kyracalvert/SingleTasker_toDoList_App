@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>TaskApp | Inspired Efficiency</title>
+    <title>SingleTasker | Inspired Efficiency</title>
     <script src="vendors/angular.min.js"></script>
     <script src="scripts/client.js"></script>
     <link rel="stylesheet" href="vendors/bootstrap-4.1.3-dist/css/bootstrap.css">
@@ -16,9 +16,9 @@
 <body ng-app="myApp" background="images/blue-abstract.png">
     <div class="header-intro">
 
-        <div id="pig-container">
-            <h1 class=>TaskApp
-                <small class="text-muted">Inspired Efficiency</small>
+        <div class="page-header">
+            <h1 class=>SingleTasker |
+                <small class="text-muted">Inspired Efficiency.</small>
             </h1>
         </div>
     </div>
@@ -30,7 +30,7 @@
         </header>
         <br>
         <br>
-        <h3>Add New Task:</h3>
+        <h2>Add New Task:</h2>
         <form class="task-form" id="task-form" ng-submit="tc.addTask()">
             <input type="text" class="date" ng-model="tc.dateIn" placeholder="Today's Date">
             <input type="text" class="due_date" ng-model="tc.dueIn" placeholder="Due Date">
