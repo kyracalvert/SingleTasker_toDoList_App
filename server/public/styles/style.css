@@ -29,10 +29,12 @@ table, th, td {
 
 .no {
     background-color: #B2E3E8;
+    color: black;
 }
 
 .yes {
     background-color: #CABBAD;
+    text-decoration: line-through;
     
 }
 
@@ -41,11 +43,9 @@ h2, h3{
     width: 80%;
     margin: 0 auto;  
     font-family: 'Helvetica Neue', sans-serif; 
-    /* font-size: 50px;  */
     font-weight: bold; 
     letter-spacing: -1px; 
     line-height: 1; 
-    /* text-align: center;  */
     color: #648AB0;
     text-shadow: 0 1px 1px white;
    
