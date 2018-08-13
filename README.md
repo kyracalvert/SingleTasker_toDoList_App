@@ -34,6 +34,7 @@ To-Do List Application
     -When pressed, this button removes the task from the database and the table on the DOM.
 
 # Screen Shot: 
+<img width="1438" alt="screen shot 2018-08-13 at 11 45 37 am" src="https://user-images.githubusercontent.com/34479779/44045802-4fa14740-9eef-11e8-85fa-d8952e6f6fdf.png">
 
 # Next Steps:
 -When the user clicks on any table data box, that box should become an editable text field
