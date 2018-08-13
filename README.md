@@ -45,7 +45,7 @@
 # Author:
 Kyra Crawford Calvert
     
-Base Mode CHECKLIST: 
+# Base Mode CHECKLIST: 
 - [x] Write README
 - [x] Setup project folders and files
 - [x] spin up server
