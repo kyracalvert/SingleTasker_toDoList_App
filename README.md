@@ -1,24 +1,46 @@
-# weekend-challenge-3-to-do
-To-Do-List Application
+# SingleTasker_toDoList_App
+To-Do List Application
 
-Here are the specific components for the challenge:
+-Create a front end experience that allows a user to create a task. 
+-When the task is created, it should be stored inside of a database. 
+-Whenever a task is created the front end should refresh to show all tasks that need to be completed.
+-Each task should have an option to 'Complete' or 'Delete'.
+-When a task is complete, its visual representation should change on the front end 
+-Whether or not a task is complete should also be stored in the database.
+-Deleting a task should remove it both from the Front End as well as the Database.
 
-Using AngularJS, create a front end experience that allows a user to create a task.
-When the task is created, it should be stored inside of a database (MongoDB)
-Whenever a task is created the front end should refresh to show all tasks that need to be completed.
-Each task should have an option to 'Complete' or 'Delete'.
-When a task is complete, its visual representation should change on the front end (for example, the background of the task container could change from gray to green, as well as the complete option 'checked off'. Each of these are accomplished in CSS, but will need to hook into logic to know whether or not the task is complete. ng-class will come in handy!)
-Whether or not a task is complete should also be stored in the database.
-Deleting a task should remove it both from the Front End as well as the Database.
-Include a README.md with your project (template).
-We would recommend you spend some time thinking about how to approach this problem. Think through all the logic that will be needed prior to writing any code. Think through your Schema for Mongoose and how you will structure your data. Take your time, relax, remember that impostor syndrome is real, and that you are capable of knocking this out of the park!
 
-Use CSS styling to move the aesthetic of the page beyond the vanilla HTML look:
+# Built With:
+-Visual Studio Code
+-AngularJS
+-MongoDB
+-Node 
+-Express
+-Bootstrap
 
-Background color of the page
-font family and size
-text color &or background color of tasks to show whether or not they have been completed
+# Installing:
+1. Download this project.
+2. In terminal:
+    1. npm install
+    2. npm start
+    
+# Completed Features:
+-Input fields to name task, notes, submit and due dates
+-Submit button that addes tasks to table
+-Table that captures task inputs and stores them in a database
+-Complete button that populated with each submitted task
+    -When pressed, this button updates the task in the database (from false to true), puts a line through the task data on the DOM, and deactivates itself. 
+-Delete button that populates with each submitted task
+    -When pressed, this button removes the task from the database and the table on the DOM.
 
+# Screen Shot: 
+
+# Next Steps:
+-When the user clicks on any table data box, that box should become an editable text field
+-Tasks should submit to the table upon pressing 'enter' on the keyboard
+-Completed tasks should float to the bottom of the page, while remaining tasks stay at the top
+-Organize tasks by due date
+    
 CHECKLIST: Refer to Koala Holla group project
 [x] Write README
 [x] Setup project folders and files
