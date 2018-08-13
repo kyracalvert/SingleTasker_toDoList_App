@@ -22,10 +22,6 @@ myApp.controller('TaskController', function ($http) {
         }).then(function (response) {
             console.log('back from server with:', response.data);
             vm.tasks = response.data;
-            vm.dateIn = "";
-            vm.dueIn = "";
-            vm.taskIn = "";
-            vm.notesIn = "";
             // "" Empties NG input fields upon submit 
         }).catch(function (error) {
             console.log('error retrieiving from server', error);
@@ -46,6 +42,10 @@ myApp.controller('TaskController', function ($http) {
             url: '/task',
             data: vm.taskToAdd
         }).then(function (response) {
+            vm.dateIn = "";
+            vm.dueIn = "";
+            vm.taskIn = "";
+            vm.notesIn = "";
             getTasksFromServer();
         }).catch(function (error) {
             alert('unable to post task')
