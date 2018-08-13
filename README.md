@@ -46,41 +46,41 @@
 Kyra Crawford Calvert
     
 Base Mode CHECKLIST: 
-[x] Write README
-[x] Setup project folders and files
-[x] spin up server
-[x] .gitignore
-[x] install express
-[x] bring Angular file into project
-    [x] source AngularJS into index.html
-[x] Styles folder
-    [x] source in style sheet
-[x] Source in Client.js
-[x] Bring in Bootstrap css and js into vendors folder
-    [x] Source Bootstrap into index.html
-[x] Mongo
-    [x] Install Mongoose
-    [x] Setup Mongoose
-    [x] Create database Schema
-    [x] Create new database via server.js
-    [x] Connect to Mongo via server.js
-    [x] Ensure ROBO3T is logging database
-[x] HTML (using AngularJS)
-    [x] Form: input fields to capture to-dos
-    [x] Setup NG app and controller
-    [x] Table to capture inputs: task, submit, complete, delete
-        [x] When task complete, its visual representation should change (ng-class)
-    [x] Format table
-    [x] Buttons: submit, complete, delete
-[x] Client
-    [x] Angular
-    [x] Logic for GET (add to table)
-    [x] Logic for POST (get info from form)
-[x] Server
-    [x] Logic for GET
-    [x] Logic for POST 
-    [x] Logic for submit
-    [x] Logic for complete
-    [x] Logic for delete
+- [x] Write README
+- [x] Setup project folders and files
+- [x] spin up server
+- [x] .gitignore
+- [x] install express
+- [x] bring Angular file into project
+    - [x] source AngularJS into index.html
+- [x] Styles folder
+    - [x] source in style sheet
+- [x] Source in Client.js
+- [x] Bring in Bootstrap css and js into vendors folder
+    - [x] Source Bootstrap into index.html
+- [x] Mongo
+    - [x] Install Mongoose
+    - [x] Setup Mongoose
+    - [x] Create database Schema
+    - [x] Create new database via server.js
+    - [x] Connect to Mongo via server.js
+    - [x] Ensure ROBO3T is logging database
+- [x] HTML (using AngularJS)
+    - [x] Form: input fields to capture to-dos
+    - [x] Setup NG app and controller
+    - [x] Table to capture inputs: task, submit, complete, delete
+    - [x] When task complete, its visual representation should change (ng-class)
+    - [x] Format table
+    - [x] Buttons: submit, complete, delete
+- [x] Client
+    - [x] Angular
+    - [x] Logic for GET (add to table)
+    - [x] Logic for POST (get info from form)
+- [x] Server
+    - [x] Logic for GET
+    - [x] Logic for POST 
+    - [x] Logic for submit
+    - [x] Logic for complete
+    - [x] Logic for delete
 
 
